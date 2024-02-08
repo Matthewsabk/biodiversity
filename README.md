@@ -7,8 +7,10 @@ The brief on the project states that the data is from the National Parks Service
 
 The initial dataset included two csv's, 'observations' and 'species_info.csv'. Observations.csv contains 23296 rows  of data on the species observed  within the subject National Parks, with a count of observations, park where it was observed and scientific name. The species_info.csv contains columns for scientific name, common names, and conservation status and has data for 5824 species.
 
+Using python 3.10.12.
+
 ### Data Cleaning
-In a ipynb, data_cleaning_biodiversity.ipynb, the data has been merged, cleaned and deduplicated. 
+In a Jupyter Notebook, data_cleaning_biodiversity.ipynb, the data has been merged, cleaned,  and deduplicated. 
 - Merge data on scientific_name
 - Drop fully duplicated rows
 - Check for missing values
@@ -21,3 +23,6 @@ In a ipynb, data_cleaning_biodiversity.ipynb, the data has been merged, cleaned 
 - Save the data to a new csv, 'biodiversity_data.csv'
 
 ### Analysis
+ - Initial layout of scope of planned work in Jupyter Notebook, biodiversity.ipynb. 
+
+### Conclusions
