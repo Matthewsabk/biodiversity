@@ -10,16 +10,15 @@ The initial dataset included two csv's, 'observations' and 'species_info.csv'. O
 Using python 3.10.12.
 
 ### Data Cleaning
-In a Jupyter Notebook, data_cleaning_biodiversity.ipynb, the data has been merged, cleaned,  and deduplicated. 
-- Merge data on scientific_name
-- Drop fully duplicated rows
+In a Jupyter Notebook, data_cleaning_biodiversity.ipynb, the data has been cleaned, deduplicated, and merged.
+- Dropped fully duplicated rows
 - Check for missing values
-- Resolve missing values -- Many missing values for conservation status
-- Replace missing values with 'No Status'
+- Replaced large number of missing values in 'conservation status' with 'No Status'
+- Check for and resolved conflicting values in 'conservation status'.
 - Check for complex duplication -- duplicate scientific name with unique common names caused over-reporting of some species.
-- Remove complex duplication based on all rows except 'common_names'
+- Remove complex duplication due to differences in 'common_names'
 - Remove ' National Park' from all every value in park_name
-- Check data shape -- There are now 5541 scientific names observed in 7 categories in each of the four National Parks, Bryce, Great Smoky Mountain, Yellowstone, and Yosemite.
+- Check data shape -- There are now 5541 scientific names observed in 7 categories in each of the four National Parks: Bryce, Great Smoky Mountain, Yellowstone, and Yosemite.
 - Save the data to a new csv, 'biodiversity_data.csv'
 
 ### Analysis
